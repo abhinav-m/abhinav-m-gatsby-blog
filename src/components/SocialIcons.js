@@ -6,7 +6,7 @@ import {
   faCodepen,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
-import { blue } from "color-name"
+
 import { rhythm } from "../utils/typography"
 
 const SocialIcons = () => (
@@ -25,6 +25,7 @@ const SocialIcons = () => (
         href="https://www.linkedin.com/in/abhinav-mishra-78228a119/"
         target="_blank"
         style={{ boxShadow: "0 0 0 0 " }}
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon
           icon={faLinkedin}
@@ -37,6 +38,7 @@ const SocialIcons = () => (
         href="https://github.com/abhinav-m"
         target="_blank"
         style={{ boxShadow: "0 0 0 0 " }}
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faGithub} size="3x" style={{ color: "black" }} />
       </a>
@@ -44,6 +46,7 @@ const SocialIcons = () => (
       <a
         href="https://codepen.io/abhinavthinktank/"
         style={{ boxShadow: "0 0 0 0 " }}
+        rel="noopener noreferrer"
         target="_blank"
       >
         <FontAwesomeIcon
@@ -56,6 +59,7 @@ const SocialIcons = () => (
       <a
         href="https://instagram.com/abhinav_m93"
         style={{ boxShadow: "0 0 0 0 " }}
+        rel="noopener noreferrer"
         target="_blank"
       >
         <FontAwesomeIcon
@@ -65,7 +69,10 @@ const SocialIcons = () => (
         />
       </a>
     </div>
-    <p>You can also email me at abhinav_m@hotmail.com</p>
+    <p>
+      You can also email me at{" "}
+      <a href="mailto:abhinav_m@hotmail.com">abhinav_m@hotmail.com</a>
+    </p>
   </div>
 )
 
